@@ -241,10 +241,10 @@ body {
   .navbar-row {
     padding: 0px 10px;
   }
-  .dots{
+  .dots {
     padding: 0px 3px;
   }
-  .dots-btn{
+  .dots-btn {
     padding: 10px;
   }
   .card {
@@ -327,7 +327,6 @@ body {
     overflow-x: auto;
     flex-wrap: nowrap; /* Disable wrapping */
     white-space: nowrap; /* Prevent line breaks */
-    scrollbar-width: thin; /* Firefox */
   }
 
   .filters::-webkit-scrollbar {
@@ -350,7 +349,7 @@ body {
   .search-input {
     width: 50%;
   }
-  .navbar-row{
+  .navbar-row {
     padding: 0px 10px;
   }
   .card {
@@ -399,6 +398,9 @@ body {
   .filters li {
     flex: 0 0 auto; /* Prevent shrinking */
   }
+  .card {
+    width: 23%;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -418,6 +420,9 @@ body {
 
   .filters li {
     flex: 0 0 auto; /* Prevent shrinking */
+  }
+  .card {
+    width: 23%;
   }
 }
 
