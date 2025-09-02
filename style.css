@@ -272,9 +272,8 @@ body {
     display: flex;
     padding: 0px;
     margin: 0px;
-    justify-content: center;
     overflow-x: auto;
-    flex-wrap: nowrap; /* Disable wrapping */
+    flex-wrap: nowrap;
     white-space: nowrap;
   }
   .filters li {
@@ -323,7 +322,6 @@ body {
   }
   .filters {
     display: flex;
-    justify-content: center;
     overflow-x: auto;
     flex-wrap: nowrap; /* Disable wrapping */
     white-space: nowrap; /* Prevent line breaks */
@@ -361,7 +359,6 @@ body {
   }
   .filters {
     display: flex;
-    justify-content: center;
     overflow-x: auto;
     flex-wrap: nowrap; /* Disable wrapping */
     white-space: nowrap; /* Prevent line breaks */
@@ -384,7 +381,6 @@ body {
   }
   .filters {
     display: flex;
-    justify-content: center;
     overflow-x: auto;
     flex-wrap: nowrap; /* Disable wrapping */
     white-space: nowrap; /* Prevent line breaks */
@@ -407,7 +403,6 @@ body {
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .filters {
     display: flex;
-    justify-content: center;
     overflow-x: auto;
     flex-wrap: nowrap; /* Disable wrapping */
     white-space: nowrap; /* Prevent line breaks */
