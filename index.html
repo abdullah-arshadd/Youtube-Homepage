@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Youtube Homepage</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!---Navbar-->
+  <header class="navbar-row">
+    <div class="left-logo">
+      <span class="hamburger">☰</span>
+      <img class="nav-img" src="https://www.logo.wine/a/logo/YouTube/YouTube-Logo.wine.svg" alt="Logo" />
+    </div>
+    <div class="search-bar">
+      <input class="search-input" type="text" placeholder="Search" />
+      <button class="search-btn" aria-label="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <div class="microphone">
+        <button class="mic"><i class="fa-solid fa-microphone"></i></button>
+      </div>
+    </div>
+    <div class="right-nav">
+      <div class="dots">
+        <span class="dots-span"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+      </div>
+      <div class="dots">
+        <button class="dots-btn">
+          <i class="fa-solid fa-user"></i> Sign in
+        </button>
+      </div>
+    </div>
+  </header>
+  <section class="container">
+    <div class="row">
+      <!---Vertical Sidebar-->
+      <div class="col-vertical">
+        <ul class="vertical-list">
+          <li>
+            <i class="fa-solid fa-house vlist-icons"></i>
+            <span>Home</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-camera k vlist-icons"></i>
+            <span>Shorts</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-play vlist-icons"></i>
+            <span>Subscriptions</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-user vlist-icons"></i>
+            <span>You</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-clock-rotate-left vlist-icons"></i>
+            <span>History</span>
+          </li>
+        </ul>
+      </div>
+      <!---List Bar-->
+      <div class="col-horizontal">
+        <div class="main-tabs">
+          <ul class="filters" id="filter-list">
+            <li id="filter-template">
+              <a href="#">All</a>
+            </li>
+          </ul>
+        </div>
+        <!---Video Cards-->
+        <div class="main-cards" id="main-cards-row">
+          <div class="card" id="video-card-template">
+            <div class="card-img">
+              <img class="thumbnail" src="images/img.jfif" alt="" />
+            </div>
+            <div class="card-text">
+              <div class="card-icon">
+                <img class="channel-icon" src="images/img.jfif" alt="" />
+              </div>
+              <div class="card-bottom">
+                <h3 class="video-title">Random Title</h3>
+                <p class="channel-name">Channel name</p>
+                <p class="video-stats">2M • 2 Days Ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---Shorts Section-->
+        <div class="shorts-text">
+          <img class="shorts-logo" src="images/Youtube_shorts_icon.svg.png" alt="" />
+          <h1>Shorts</h1>
+        </div>
+        <!---Shorts Card-->
+        <div class="shorts">
+          <div class="shorts-card" id="shorts-template">
+            <div class="top-img">
+              <img src="images/img.jfif" alt="" class="shorts-img" />
+            </div>
+            <div class="shorts-bottom">
+              <div class="shorts-col1">
+                <p>Part 1 | I think we have a choice</p>
+              </div>
+              <div class="shorts-col2">
+                <span class="ellipsis">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---Video Card Rows-->
+        <div id="card-row-2"></div>
+        <div id="card-row-3"></div>
+      </div>
+    </div>
+  </section>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

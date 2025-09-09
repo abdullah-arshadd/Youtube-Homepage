@@ -1,0 +1,543 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.navbar-row {
+  padding: 0px 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* make sure it stays on top */
+  background-color: white;
+  /* or whatever background to avoid transparency */
+}
+
+.hamburger {
+  font-size: 20px;
+  width: 100%;
+}
+
+.nav-img {
+  width: 100%;
+  height: 70px;
+}
+
+.left-logo {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: center;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  height: 38px;
+  outline: none;
+}
+
+.mic:hover {
+  background-color: #e8e5e5;
+}
+
+.search-btn {
+  padding: 0 20px;
+  height: 38px;
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
+  background-color: #f0f0f0;
+  border: 1px solid gray;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #555;
+}
+
+.search-btn:hover {
+  background-color: #e8e5e5;
+}
+
+.microphone {
+  padding: 0px 10px;
+}
+
+.mic {
+  padding: 0px 13px;
+  height: 42px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.dots-span {
+  cursor: pointer;
+}
+
+.dots {
+  padding: 0px 10px;
+}
+
+.dots-btn {
+  color: blue;
+  background-color: white;
+  border: 1px solid rgb(216, 212, 212);
+  border-radius: 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.dots-btn:hover {
+  background-color: #def1ff;
+}
+
+.row {
+  display: flex;
+  padding-left: 2px;
+}
+
+.col-vertical {
+  /* width: 5%; */
+  position: sticky;
+  top: 70px;
+  /* height of your navbar to avoid overlap */
+  align-self: flex-start;
+  height: calc(100vh - 70px);
+  /* take full height minus navbar */
+}
+
+.vertical-list {
+  list-style: none;
+  padding: 0 !important;
+  margin-left: 2px;
+}
+
+.vertical-list li {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.vertical-list li span {
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.vertical-list li:hover {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+}
+
+.vlist-icons {
+  padding: 5px 0px;
+}
+
+.filters {
+  display: flex;
+}
+
+.filters li {
+  padding: 10px 20px;
+  list-style: none;
+  background-color: #e8e5e5;
+  margin: 0px 5px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.filters a {
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+}
+
+.main-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 45px;
+}
+
+.col-horizontal {
+  width: 95%;
+}
+
+.card {
+  width: 23.75%;
+}
+
+.card-text {
+  margin-top: 10px;
+}
+
+.channel-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.thumbnail {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.card-text {
+  display: flex;
+}
+
+.video-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+
+.channel-name,
+.video-stats {
+  font-size: 14px;
+  color: #606060;
+  margin: 0;
+}
+
+.shorts {
+  display: flex;
+  gap: 10px;
+  padding: 20px 45px;
+}
+
+.shorts-card {
+  width: 18.8%;
+}
+
+.shorts-img {
+  border-radius: 20px;
+  width: 100%;
+  height: 350px;
+}
+
+.shorts-text {
+  padding: 20px 45px;
+  display: flex;
+  align-items: center;
+}
+
+.shorts-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.shorts-text h1 {
+  margin: 0;
+}
+
+.shorts-bottom {
+  align-items: center;
+  display: flex;
+  padding: 6px;
+}
+
+.shorts-col1 {
+  width: 90%;
+}
+
+.shorts-col2 {
+  width: 10%;
+}
+
+.shorts-col1 p {
+  padding: 3px;
+  margin: 0px;
+  font-size: 20px;
+}
+
+.ellipsis {
+  padding: 3px;
+  font-size: 17px;
+}
+
+/* Mobile phones (portrait and landscape) */
+@media (max-width: 575.98px) {
+  .hamburger {
+    font-size: 15px;
+  }
+
+  .navbar-row {
+    padding: 0px 10px;
+  }
+
+  .dots {
+    padding: 0px 3px;
+  }
+
+  .dots-btn {
+    padding: 4px 10px;
+    white-space: nowrap;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .main-cards {
+    padding: 20px 10px;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search-input,
+  .col-vertical {
+    display: none;
+  }
+
+  .col-horizontal {
+    width: 100%;
+  }
+
+  .shorts,
+  .shorts-text {
+    display: none;
+  }
+
+  .filters {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+  .filters li {
+    margin-top: 15px;
+    padding: 5px 10px;
+    flex: 0 0 auto;
+  }
+
+  .filters::-webkit-scrollbar {
+    height: 6px;
+    /* Chrome/Safari */
+  }
+
+  .search-btn {
+    box-shadow: none;
+    border-radius: 20px;
+    font-size: 15px;
+  }
+
+  .mic {
+    display: none;
+  }
+
+  .search-btn {
+    padding: 0px;
+    background-color: white;
+    border: none;
+  }
+
+  .search-bar {
+    display: block;
+    margin-right: auto;
+    padding-left: 5px;
+  }
+
+  .dots-span {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .search-input {
+    display: none;
+  }
+
+  .dots-btn {
+    white-space: nowrap;
+  }
+
+  .search-btn,
+  .mic {
+    padding: 0px;
+    background-color: white;
+    border: none;
+    box-shadow: none;
+  }
+
+  .search-bar {
+    justify-content: start;
+  }
+
+  .col-vertical {
+    display: none;
+  }
+
+  .col-horizontal {
+    width: 100%;
+  }
+
+  .filters {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    /* Disable wrapping */
+    white-space: nowrap;
+    /* Prevent line breaks */
+  }
+
+  .filters::-webkit-scrollbar {
+    height: 6px;
+    /* Chrome/Safari */
+  }
+
+  .filters li {
+    flex: 0 0 auto;
+    /* Prevent shrinking */
+  }
+
+  .card {
+    width: 47.5%;
+  }
+
+  .shorts,
+  .shorts-text {
+    display: none;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .search-input {
+    width: 50%;
+  }
+  .card {
+    width: 48%;
+  }
+
+  .shorts,
+  .shorts-text {
+    display: none;
+  }
+
+  .filters {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    /* Disable wrapping */
+    white-space: nowrap;
+    /* Prevent line breaks */
+    scrollbar-width: thin;
+    /* Firefox */
+  }
+
+  .filters::-webkit-scrollbar {
+    height: 6px;
+    /* Chrome/Safari */
+  }
+
+  .filters li {
+    flex: 0 0 auto;
+    /* Prevent shrinking */
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .card {
+    width: 31.5%;
+  }
+
+  .filters {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    /* Disable wrapping */
+    white-space: nowrap;
+    /* Prevent line breaks */
+    scrollbar-width: thin;
+    /* Firefox */
+  }
+
+  .filters::-webkit-scrollbar {
+    height: 6px;
+    /* Chrome/Safari */
+  }
+
+  .filters li {
+    flex: 0 0 auto;
+    /* Prevent shrinking */
+  }
+
+  .card {
+    width: 23%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .filters {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    /* Disable wrapping */
+    white-space: nowrap;
+    /* Prevent line breaks */
+    scrollbar-width: thin;
+    /* Firefox */
+  }
+
+  .filters::-webkit-scrollbar {
+    height: 6px;
+    /* Chrome/Safari */
+  }
+
+  .filters li {
+    flex: 0 0 auto;
+    /* Prevent shrinking */
+  }
+
+  .card {
+    width: 23%;
+  }
+}
+
+/* XXL (extra large 4K+ screens) */
+@media (min-width: 1400px) {
+  /* Your styles for extra large screens here */
+}
