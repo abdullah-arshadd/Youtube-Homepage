@@ -203,6 +203,15 @@ body {
   width: 23.75%;
   padding: 10px 0px;
 }
+.card img{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card img:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* halka shadow */
+  cursor: pointer;
+  border-radius: 0px;
+}
 
 .card-text {
   margin-top: 10px;
@@ -258,6 +267,11 @@ body {
   border-radius: 20px;
   width: 100%;
   height: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.shorts-img:hover{
+  transform: scale(1.01);
+  cursor: pointer;
 }
 
 .shorts-text {
