@@ -167,6 +167,10 @@ body {
 .filters {
   display: flex;
   padding: 0px 6px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  scrollbar-width: thin;
 }
 
 .filters li {
@@ -548,5 +552,7 @@ body {
 
 /* XXL (extra large 4K+ screens) */
 @media (min-width: 1400px) {
-  /* Your styles for extra large screens here */
+  .shorts {
+    gap: 20px;
+  }
 }
