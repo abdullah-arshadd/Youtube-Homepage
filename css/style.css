@@ -3,8 +3,8 @@
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
@@ -119,13 +119,13 @@ body {
 
 .row {
   display: flex;
-  padding-left: 2px;
 }
 
 .col-vertical {
   /* width: 5%; */
   position: sticky;
   top: 70px;
+  margin-left: 4px;
   /* height of your navbar to avoid overlap */
   align-self: flex-start;
   height: calc(100vh - 70px);
@@ -166,6 +166,7 @@ body {
 
 .filters {
   display: flex;
+  padding: 0px 6px;
 }
 
 .filters li {
@@ -187,7 +188,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px 45px;
+  padding: 10px 15px;
 }
 
 .col-horizontal {
@@ -196,6 +197,7 @@ body {
 
 .card {
   width: 23.75%;
+  padding: 10px 0px;
 }
 
 .card-text {
@@ -203,17 +205,22 @@ body {
 }
 
 .channel-icon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   margin-right: 12px;
   object-fit: cover;
 }
-
+.card-img {
+  width: 100%;
+  height: 200px;
+}
 .thumbnail {
   width: 100%;
   display: block;
+  height: 100%;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .card-text {
@@ -236,7 +243,7 @@ body {
 .shorts {
   display: flex;
   gap: 10px;
-  padding: 20px 45px;
+  padding: 20px 15px;
 }
 
 .shorts-card {
@@ -250,7 +257,7 @@ body {
 }
 
 .shorts-text {
-  padding: 20px 45px;
+  padding: 20px 15px;
   display: flex;
   align-items: center;
 }
@@ -297,7 +304,7 @@ body {
   }
 
   .navbar-row {
-    padding: 0px 10px;
+    padding: 5px 10px;
   }
 
   .dots {
@@ -447,9 +454,11 @@ body {
     width: 50%;
   }
   .card {
-    width: 48%;
+    width: 46%;
   }
-
+  .main-cards {
+    padding: 10px;
+  }
   .shorts,
   .shorts-text {
     display: none;
