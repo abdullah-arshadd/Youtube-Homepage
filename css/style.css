@@ -230,6 +230,7 @@ body {
 .thumbnail:hover{
   transform: scale(1.01);
   border-radius: 0px;
+  cursor: pointer;
 }
 
 .card-text {
