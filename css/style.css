@@ -226,11 +226,6 @@ body {
   right: -6px;
 }
 
-.scroll-btn:disabled {
-  opacity: 0;
-  cursor: default;
-}
-
 .filters a {
   text-decoration: none;
   color: black;
