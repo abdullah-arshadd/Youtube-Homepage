@@ -12,6 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -77,11 +81,30 @@
         <!---List Bar-->
         <div class="col-horizontal">
           <div class="main-tabs">
-            <ul class="filters" id="filter-list">
-              <li id="filter-template">
-                <a href="#">All</a>
-              </li>
-            </ul>
+            <div class="filters-wrapper">
+              <button
+                class="scroll-btn left"
+                id="scroll-left"
+                aria-label="Scroll left"
+              >
+                <i class="fa-solid fa-angle-left"></i>
+              </button>
+
+              <ul class="filters" id="filter-list">
+                <!-- template kept here, hidden so JS can clone it -->
+                <li id="filter-template" style="display: none">
+                  <a href="#">All</a>
+                </li>
+              </ul>
+
+              <button
+                class="scroll-btn right"
+                id="scroll-right"
+                aria-label="Scroll right"
+              >
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
           </div>
           <!---Video Cards-->
           <div class="main-cards" id="main-cards-row">
